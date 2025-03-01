@@ -99,8 +99,9 @@ The second critique I have focuses more on the smaller design choices within the
 
 			<ul>
 				<li>I was still stuck on the seasonality of this data, and wanted to make the timeline aspect of it intentionally really clear. I had the idea of trying a calendar and wanted to see if I could get it to communicate the data. Calendar's are a visual that everyone is comfortable looking at, so hopefully it is familiar to lay audiences.</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>I wanted to deal with the problem of death rates in a better way than the spiral did. What was missing from the second visualization I drew was that things are actually getting better from a death standpoint, and I wanted to make that very clear. </li>
+				<li>I also was increasingly interested in the concept of a dual axis. I knew what this was from my tableau tutorials, but had never integrated it into a sketch of my own. I think it works well here because it highlights that while case counts may be high, death / hospitalization counts are not, which is an important observation to avoid panic with this particular data set. I do regret not doing a better job of using color here, since it seems like a missed opportunity on such a unique type of visualization. The dual axis does do a good job of overlaying hopsitalization rates on top of the case counts, but color could have added a seasonality or even growth rate perspectiev to the data. </li>
+
 			</ul>
 		</section>
 
@@ -108,9 +109,9 @@ The second critique I have focuses more on the smaller design choices within the
 			<h2>Final Visualization Design</h2>
       
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Assets/pic1.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+          Monthly Covid Cases and Deaths for 2020 - 2022
 				</figcaption>
 			</figure>
 
@@ -118,15 +119,20 @@ The second critique I have focuses more on the smaller design choices within the
 
 		<section>
 			<h2>Design Process & Design Decisions</h2>
-
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+        For my final design, I wanted to highlight two things: the seasonality of Covid and the fact that while cases are increasing, deaths are going down. I was trying to put myself in the shoes of someone in January of 2022 and give them a visualization that highlights the severity of the case count without leading anyone to panic about their own impending doom. To do this, I focused on two metrics Deceased Counts and Confirmed Counts. I looked at them on a monthly basis across all three years in the data set and organized them so months was a column and years was a row. This allowed it to be very easy to intuitively look down a column and compare the same month across years. 
       </p>
+      <p>
 
+        The interesting thing I did was focus on growth rates in new cases, and death rates in new deaths. To do so, I calculated how much month to month growth was amongst cases/deaths. I originally had this as the final step, however the growth/death rates were so high in March of 2020 that I had to utilize a log scale, which worked great! I then used a red green color axis which allowed me to show red when the rates of growth or death were highest and green when they were decreasing most quickly. This allowed me to achieve my main goal of showing that for 2022 while cases were high, deaths were much lower, and they were decreasing more quickly than they had in the past. 
+</p>
+<p>
+        I do have a few critiques of this design. I could have made the labels on my growth/death rates clearer. I also didn't like that it had the year first and then the new confirmed/new deceased breakdown. I wanted it to be New Confirmed first then broken down by year followed by new deceased, since its hard visually to differentiate between the deaths and confirmed cases. It didn't seem to work without creating a dashboard of each, which was out of bounds for this assignment. I also wonder if I should have used different color scales? I felt like red green was so intuitive here that red was bad for both, but maybe that would have allowed for easier differentiation.
+      </p>
       <h3>Reflection</h3>
 
       <p>
-        WRITE YOUR FINAL REFLECTION HERE.
+        I definitely felt some tension while trying to create this design. I had a really hard time balancing the case numbers, death numbers, growth rate and death rate into a cohesive visual that showed everything I wanted. The process made me appreciate how hard it must have been to come to the spiral visualization in the first place. I do think I did a good job of incorporating my learnings from my sketches. I think I could have done a better job of seasonality with distinct quarters marked off on the graph, which could have been a learning from visualization 2. But I do like that I took my learnings from Vis 1 and Vis 3 and incorporated deaths (instead of hospitalizations) into my final design. The challenge of showing two separate pieces of numerical data was apparent, and I couldn't make it look visually engaging on a dual axis, which I expected to be easy. I think if I went back and did the intial critique again, I would have been kinder to the origanl authors. My critique of highlighting critical points was also impossible to incorporate since my table did not allow for a straight trendline and only looked at months comparitively, which was a tradeoff on highlighting seasonality instead of giving the user more information
       </p>
 		</section>
 	</main>
