@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique & Redesign
+		</h1>
+
+		<p>
+			<strong>Rachael Harkavy</strong> — <em>rharkavy@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading & Critique</h2>
+
+			<figure>
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>The main insight that I can glean from the chart as it is formatted is that Covid spikes in Winter months (January, top of the spiral). This intuitively makes sense from when Flu Season is, and is well visualized by the spiral, since you can see that the thicker portions happen in the same part of the year.</li>
+				<li>The second thing that jumps out to me is how year on year the pandemic is worsening in terms of number of cases. January 2020 is significantly smaller than January 2021, which is smaller than January 2022. This seems to be indicating that the growth of Covid cases every January will continue into the future, which seems like it could be cause for some skepticism, since there is only two years of data to back it up.</li>
+				<li>The last thing that I noticed is that the edges of the spiral aren't flat, but instead exhibit a bumpy sort of pattern, indicating that growth of the disease is not linear and potentially due to the 7 day moving average that they are depicting. If folks are most likely to get tested during the week, the 7 day average would be lower on weekends for instance.</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+						<ul>
+<li>
+Overall, this design does an effective job of indicating the seasonality and overall growth in magnitude of the Covid-19 pandemic. It is an origanl idea, and the spiral nature of the design reflects the cycle of a year and is likely intuitive to understand for most readers, especially of the New York Times. However there are noticeable flaws. The first, and most glaring omission, is cases of hospitalizations relative to total cases. In the context of the opinion article that it was attached to, hospitalization rates are LOWER for the 2022 Omicron variant than they were for prior variants. However, by looking at this graphic alone, the reader would likely infer that the situation was dire and immediate action should be taken to protect against catastrophe, which I suppose could be a reason the author intentionally omitted it. It would be fairly simple to have a different color secion of the spiral indicating hospitalizations as a percentage of new cases, which would give a clearer picture of where things are currently sitting. 
+</li>
+<li>
+The second critique I have focuses more on the smaller design choices within the visualizations. I feel like the authors could have done a better job of labeling information on the graph, like the dates where Omicron and Delta variants began, and could have labeled magnitudes to make it more intuitive to the reader the scale we are speaking about at different points in time. They do have a key on the top left, but it is challenging for me to translate that scale to different places on the graph and get an accurate understanding of the case count. It is also hard for me to understand that we are supposed to start at the middle and follow the spiral outward. A label like "Start" or even a larger arrow pointing out from the middle would have been helpful to orient myself within the visualization. The small arrow doesn't draw your eyes as a viewer.
+</li></ul>
+
+	 
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="Assets/does.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+				<figcaption>
+          New Cases of Covid in the US: 2020-2022
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>The first rationale for this was that I wanted to make the spiral we stuied in part one better. Overall, I thought it was an innovate visualization and the mistakes they made, like not including hospitalization rates, were fixable. The purple here represents hospitalization numbers and red + purple represents total new cases. I think that the red + purple part was slightly unclear, and I could have dont a better job of distinguishing that the sum was total cases</li>
+				<li>My other problem with the spiral was that there wasn't enough descriptive labeling around it. I added a few notes on what 100k cases looked like and when specific variants started. This had always felt like a timeline to me, and so adding descriptive markers along it made a lot of sense. I think if I had more information on Covid I could have added many more, and it still would have been effective.</li>
+				<li>While I am pleased overall with how this turned out, I still think magnitude of cases is hard to quantify in this visualization. While we can see that they are growing, its challenging to compare time stamps that are not aligned with each other, and we can only see relative sizes, not hard numbers. This was my motivation for the next sketch, trying to make quantitative comparisons easier. However, I also knew I didn't want to lose the seasonality aspect of this visualization in my next version.</li>
+			</ul>
+
+			<figure>
+				<img src="Assets/vis_2_test.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+				<figcaption>
+          Seasonality of New Covid Cases in the USA: A Bar Graph
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>As mentioned, one of the things I liked the most about the first visualization was how clear seasonality was. I made the conscious decision here to use specific colors for each season (laid out in the top right). I think this does a good job of communicating to the viewer where in the year they are, since the x-axis is slightly convoluted with so many months. Maybe another way to do this would have been to stack the yearly bar charts on top of each other so the seasonality was even more clearly shown, but I think not having the bars sequential would have taken away from the effect of comparing them.</li>
+				<li>Secondly, I wanted this visualization to be simple and easily understood. One of the critiques of the first visualization was that it could be hard to understand quantitites. I believe that bar graphs are one of the most intuitive types of visualization and it is very easy to see in this graphic the exact magnitudes of each wave.</li>
+				<li>I tried to play around with creating a future projection here using the dotted purple lines on the far right.  While I like how they give the illusion of what is coming, it does indicate a certainty in  our future projection, which isn't actually the case. That is just the best guess based on past patterns. Maybe shading a cone would have been more effective here? </li>
+			</ul>
+
+			<figure>
+				<img src="Assets/vis_3.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+				<figcaption>
+          A Calendar Approach: New Covid Cases in the USA 2020-2022
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>I was still stuck on the seasonality of this data, and wanted to make the timeline aspect of it intentionally really clear. I had the idea of trying a calendar and wanted to see if I could get it to communicate the data. Calendar's are a visual that everyone is comfortable looking at, so hopefully it is familiar to lay audiences.</li>
+				<li>RATIONALE 2</li>
+				<li>RATIONALE 3</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="IMAGE_FILENAME" alt="" />
+				<figcaption>
+          BRIEF CAPTION HERE.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+      </p>
+
+      <h3>Reflection</h3>
+
+      <p>
+        WRITE YOUR FINAL REFLECTION HERE.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
