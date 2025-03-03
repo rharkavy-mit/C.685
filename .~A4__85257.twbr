@@ -1,0 +1,1938 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='allegations_202007271729 (2)' inline='true' name='federated.1pvi0fu10ek83g13z81bd1012z06' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='allegations_202007271729' name='textscan.1myint40h0g0qi1bmkl5m05dkuwk'>
+            <connection class='textscan' directory='/Users/rachaelharkavy/Documents/Spring 2025/6.C85/C.685/A4' filename='allegations_202007271729.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1myint40h0g0qi1bmkl5m05dkuwk' name='allegations_202007271729.csv' table='[allegations_202007271729#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='unique_mos_id' ordinal='0' />
+            <column datatype='string' name='first_name' ordinal='1' />
+            <column datatype='string' name='last_name' ordinal='2' />
+            <column datatype='string' name='command_now' ordinal='3' />
+            <column datatype='integer' name='shield_no' ordinal='4' />
+            <column datatype='integer' name='complaint_id' ordinal='5' />
+            <column datatype='integer' name='month_received' ordinal='6' />
+            <column datatype='integer' name='year_received' ordinal='7' />
+            <column datatype='integer' name='month_closed' ordinal='8' />
+            <column datatype='integer' name='year_closed' ordinal='9' />
+            <column datatype='string' name='command_at_incident' ordinal='10' />
+            <column datatype='string' name='rank_abbrev_incident' ordinal='11' />
+            <column datatype='string' name='rank_abbrev_now' ordinal='12' />
+            <column datatype='string' name='rank_now' ordinal='13' />
+            <column datatype='string' name='rank_incident' ordinal='14' />
+            <column datatype='string' name='mos_ethnicity' ordinal='15' />
+            <column datatype='string' name='mos_gender' ordinal='16' />
+            <column datatype='integer' name='mos_age_incident' ordinal='17' />
+            <column datatype='string' name='complainant_ethnicity' ordinal='18' />
+            <column datatype='string' name='complainant_gender' ordinal='19' />
+            <column datatype='integer' name='complainant_age_incident' ordinal='20' />
+            <column datatype='string' name='fado_type' ordinal='21' />
+            <column datatype='string' name='allegation' ordinal='22' />
+            <column datatype='integer' name='precinct' ordinal='23' />
+            <column datatype='string' name='contact_reason' ordinal='24' />
+            <column datatype='string' name='outcome_description' ordinal='25' />
+            <column datatype='string' name='board_disposition' ordinal='26' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unique_mos_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[unique_mos_id]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>unique_mos_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_name]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>first_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_name]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>last_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>command_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[command_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>command_now</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shield_no</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shield_no]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>shield_no</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complaint_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complaint_id]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complaint_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_received</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_received]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>month_received</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_received</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_received]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>year_received</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month_closed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month_closed]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>month_closed</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_closed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_closed]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>year_closed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>command_at_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[command_at_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>command_at_incident</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_abbrev_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_abbrev_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_abbrev_incident</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_abbrev_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_abbrev_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_abbrev_now</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_now</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_now]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_now</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank_incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rank_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>rank_incident</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mos_ethnicity]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_ethnicity</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mos_gender]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_gender</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mos_age_incident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mos_age_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>mos_age_incident</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_ethnicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[complainant_ethnicity]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_ethnicity</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[complainant_gender]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_gender</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>complainant_age_incident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[complainant_age_incident]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>complainant_age_incident</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fado_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fado_type]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>fado_type</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>allegation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[allegation]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>allegation</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precinct</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[precinct]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>precinct</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contact_reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[contact_reason]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>contact_reason</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome_description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome_description]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>outcome_description</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>board_disposition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[board_disposition]</local-name>
+            <parent-name>[allegations_202007271729.csv]</parent-name>
+            <remote-alias>board_disposition</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]&quot;' value='Counts of Individual Complaints' />
+          <alias key='&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:unique_mos_id:qk]&quot;' value='Percent of Each Race (NYPD) ' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Complainant Ethnicity (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[complainant_ethnicity]' new-bin='true'>
+          <bin default-name='false' value='&quot;Indian, Asian, Other&quot;'>
+            <value>&quot;American Indian&quot;</value>
+            <value>&quot;Asian&quot;</value>
+            <value>&quot;Other Race&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='allegations_202007271729.csv' datatype='table' name='[__tableau_internal_object_id__].[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]' role='measure' type='quantitative' />
+      <column caption='Allegation' datatype='string' name='[allegation]' role='dimension' type='nominal' />
+      <column caption='Board Disposition' datatype='string' name='[board_disposition]' role='dimension' type='nominal' />
+      <column caption='Command At Incident' datatype='string' name='[command_at_incident]' role='dimension' type='nominal' />
+      <column caption='Command Now' datatype='string' name='[command_now]' role='dimension' type='nominal' />
+      <column caption='Complainant Age Incident' datatype='integer' name='[complainant_age_incident]' role='measure' type='quantitative' />
+      <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+      <column caption='Complainant Gender' datatype='string' name='[complainant_gender]' role='dimension' type='nominal' />
+      <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+      <column caption='Contact Reason' datatype='string' name='[contact_reason]' role='dimension' type='nominal' />
+      <column caption='Fado Type' datatype='string' name='[fado_type]' role='dimension' type='nominal' />
+      <column caption='First Name' datatype='string' name='[first_name]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[last_name]' role='dimension' type='nominal' />
+      <column caption='Month Closed' datatype='integer' name='[month_closed]' role='dimension' type='quantitative' />
+      <column caption='Month Received' datatype='integer' name='[month_received]' role='dimension' type='quantitative' />
+      <column caption='Mos Age Incident' datatype='integer' name='[mos_age_incident]' role='measure' type='quantitative' />
+      <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+      <column caption='Mos Gender' datatype='string' name='[mos_gender]' role='dimension' type='nominal' />
+      <column caption='Outcome Description' datatype='string' name='[outcome_description]' role='dimension' type='nominal' />
+      <column caption='Precinct' datatype='integer' name='[precinct]' role='measure' type='quantitative' />
+      <column caption='Rank Abbrev Incident' datatype='string' name='[rank_abbrev_incident]' role='dimension' type='nominal' />
+      <column caption='Rank Abbrev Now' datatype='string' name='[rank_abbrev_now]' role='dimension' type='nominal' />
+      <column caption='Rank Incident' datatype='string' name='[rank_incident]' role='dimension' type='nominal' />
+      <column caption='Rank Now' datatype='string' name='[rank_now]' role='dimension' type='nominal' />
+      <column caption='Shield No' datatype='integer' name='[shield_no]' role='measure' type='quantitative' />
+      <column caption='Unique Mos Id' datatype='integer' name='[unique_mos_id]' role='measure' type='quantitative' />
+      <column caption='Year Closed' datatype='integer' name='[year_closed]' role='dimension' type='quantitative' />
+      <column caption='Year Received' datatype='integer' name='[year_received]' role='dimension' type='quantitative' />
+      <column-instance column='[complaint_id]' derivation='CountD' name='[ctd:complaint_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[complaint_id]' derivation='Count' name='[pcto:cnt:complaint_id:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[complaint_id]' derivation='CountD' name='[pcto:ctd:complaint_id:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[complaint_id]' derivation='CountD' name='[pcto:ctd:complaint_id:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[unique_mos_id]' derivation='Sum' name='[pcto:sum:unique_mos_id:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[unique_mos_id]' derivation='Sum' name='[pcto:sum:unique_mos_id:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/d2/fsbt0qfs4lbc3fmx3m67k72w0000gn/T/tableau-temp/#TableauTemp_19wik8y1fva0091docomm00tue58.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/02/2025 10:29:18 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>unique_mos_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[unique_mos_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unique_mos_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4783</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[first_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1280</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3457</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>command_now</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[command_now]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>command_now</remote-alias>
+              <ordinal>3</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>668</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shield_no</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shield_no]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shield_no</remote-alias>
+              <ordinal>4</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4041</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complaint_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[complaint_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complaint_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9739</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month_received</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month_received]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month_received</remote-alias>
+              <ordinal>6</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_received</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_received]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_received</remote-alias>
+              <ordinal>7</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month_closed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month_closed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month_closed</remote-alias>
+              <ordinal>8</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year_closed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_closed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_closed</remote-alias>
+              <ordinal>9</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>command_at_incident</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[command_at_incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>command_at_incident</remote-alias>
+              <ordinal>10</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>424</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_abbrev_incident</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rank_abbrev_incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_abbrev_incident</remote-alias>
+              <ordinal>11</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_abbrev_now</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rank_abbrev_now]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_abbrev_now</remote-alias>
+              <ordinal>12</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_now</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rank_now]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_now</remote-alias>
+              <ordinal>13</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rank_incident</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rank_incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank_incident</remote-alias>
+              <ordinal>14</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mos_ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mos_ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mos_ethnicity</remote-alias>
+              <ordinal>15</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mos_gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mos_gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mos_gender</remote-alias>
+              <ordinal>16</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mos_age_incident</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mos_age_incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mos_age_incident</remote-alias>
+              <ordinal>17</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complainant_ethnicity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[complainant_ethnicity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complainant_ethnicity</remote-alias>
+              <ordinal>18</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complainant_gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[complainant_gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complainant_gender</remote-alias>
+              <ordinal>19</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>complainant_age_incident</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[complainant_age_incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>complainant_age_incident</remote-alias>
+              <ordinal>20</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fado_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fado_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fado_type</remote-alias>
+              <ordinal>21</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>allegation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[allegation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>allegation</remote-alias>
+              <ordinal>22</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>precinct</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[precinct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>precinct</remote-alias>
+              <ordinal>23</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>contact_reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[contact_reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>contact_reason</remote-alias>
+              <ordinal>24</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>outcome_description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[outcome_description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outcome_description</remote-alias>
+              <ordinal>25</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>board_disposition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[board_disposition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>board_disposition</remote-alias>
+              <ordinal>26</ordinal>
+              <family>allegations_202007271729.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:unique_mos_id:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:unique_mos_id:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:cnt:complaint_id:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:mos_ethnicity:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Asian&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;American Indian&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hispanic&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Black&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Complainant Ethnicity (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Black&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Refused&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Indian, Asian, Other&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;White&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hispanic&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='allegations_202007271729.csv' id='allegations_202007271729.csv_411FD1F2A13F4F818A87CCDA3BF4502D'>
+            <properties context=''>
+              <relation connection='textscan.1myint40h0g0qi1bmkl5m05dkuwk' name='allegations_202007271729.csv' table='[allegations_202007271729#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='unique_mos_id' ordinal='0' />
+                  <column datatype='string' name='first_name' ordinal='1' />
+                  <column datatype='string' name='last_name' ordinal='2' />
+                  <column datatype='string' name='command_now' ordinal='3' />
+                  <column datatype='integer' name='shield_no' ordinal='4' />
+                  <column datatype='integer' name='complaint_id' ordinal='5' />
+                  <column datatype='integer' name='month_received' ordinal='6' />
+                  <column datatype='integer' name='year_received' ordinal='7' />
+                  <column datatype='integer' name='month_closed' ordinal='8' />
+                  <column datatype='integer' name='year_closed' ordinal='9' />
+                  <column datatype='string' name='command_at_incident' ordinal='10' />
+                  <column datatype='string' name='rank_abbrev_incident' ordinal='11' />
+                  <column datatype='string' name='rank_abbrev_now' ordinal='12' />
+                  <column datatype='string' name='rank_now' ordinal='13' />
+                  <column datatype='string' name='rank_incident' ordinal='14' />
+                  <column datatype='string' name='mos_ethnicity' ordinal='15' />
+                  <column datatype='string' name='mos_gender' ordinal='16' />
+                  <column datatype='integer' name='mos_age_incident' ordinal='17' />
+                  <column datatype='string' name='complainant_ethnicity' ordinal='18' />
+                  <column datatype='string' name='complainant_gender' ordinal='19' />
+                  <column datatype='integer' name='complainant_age_incident' ordinal='20' />
+                  <column datatype='string' name='fado_type' ordinal='21' />
+                  <column datatype='string' name='allegation' ordinal='22' />
+                  <column datatype='integer' name='precinct' ordinal='23' />
+                  <column datatype='string' name='contact_reason' ordinal='24' />
+                  <column datatype='string' name='outcome_description' ordinal='25' />
+                  <column datatype='string' name='board_disposition' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_88105F62172F49C1AF691C6BAA71CF49]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Sheet 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Counts of Complaints Filed Against Officers by Officer Race</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_id]' derivation='CountD' name='[ctd:complaint_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[unique_mos_id]' derivation='CountD' name='[ctd:unique_mos_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+            <column caption='Unique Mos Id' datatype='integer' name='[unique_mos_id]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]' scope='rows' value='Sum of Complaints Against Officers' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:unique_mos_id:qk]' />
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]</rows>
+        <cols>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</cols>
+      </table>
+      <simple-id uuid='{E786FB3D-93F4-4F4E-8352-B65F9E0F8767}' />
+    </worksheet>
+    <worksheet name='Sheet 1 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Counts of Complaints Filed Against Officers by Officer Race</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column-instance column='[unique_mos_id]' derivation='CountD' name='[ctd:unique_mos_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_id]' derivation='CountD' name='[pcto:ctd:complaint_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Unique Mos Id' datatype='integer' name='[unique_mos_id]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk]' scope='rows' value='Sum of Complaints Against Officers' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:unique_mos_id:qk]' />
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk]</rows>
+        <cols>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</cols>
+      </table>
+      <simple-id uuid='{64DCE9D0-645A-4EC3-8934-8A69BF663EBE}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Racial Breakdown of NYPD Officers by Percent
+
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[unique_mos_id]' derivation='Sum' name='[pcto:sum:unique_mos_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Unique Mos Id' datatype='integer' name='[unique_mos_id]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='text-align' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' id='legend-color' value='left' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:unique_mos_id:qk]</rows>
+        <cols>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</cols>
+      </table>
+      <simple-id uuid='{C659033B-5CC4-4C44-96F6-031600F9835C}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Count of Complaints by Officer Race by Percent
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column datatype='string' name='[Complainant Ethnicity (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[complainant_ethnicity]' new-bin='true'>
+                <bin default-name='false' value='&quot;Indian, Asian, Other&quot;'>
+                  <value>&quot;American Indian&quot;</value>
+                  <value>&quot;Asian&quot;</value>
+                  <value>&quot;Other Race&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_id]' derivation='CountD' name='[ctd:complaint_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_id]' derivation='CountD' name='[pcto:ctd:complaint_id:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Complainant Ethnicity (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='%null%' />
+                <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Refused&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:mos_ethnicity:nk]' />
+              <groupfilter function='member' level='[none:mos_ethnicity:nk]' member='&quot;American Indian&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]' shelf='columns'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' member-value='%null%' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</column>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk:2]' scope='cols' value='Complaint Count' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' value='144' />
+            <format attr='height' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]</rows>
+        <cols>([federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk] * [federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:ctd:complaint_id:qk:2])</cols>
+      </table>
+      <simple-id uuid='{D7ACFDDA-40A1-4CB0-937E-12D4699EC9D2}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Complaints by Officer Race&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column-instance column='[complaint_id]' derivation='Count' name='[cnt:complaint_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[complaint_id]' derivation='Sum' name='[pcto:sum:complaint_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[complaint_id]' derivation='Sum' name='[sum:complaint_id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:mos_ethnicity:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:mos_ethnicity:nk]' member='&quot;American Indian&quot;' />
+                <groupfilter function='member' level='[none:mos_ethnicity:nk]' member='&quot;Asian&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' />
+              <wedge-size column='[federated.1pvi0fu10ek83g13z81bd1012z06].[cnt:complaint_id:qk]' />
+              <size column='[federated.1pvi0fu10ek83g13z81bd1012z06].[sum:complaint_id:qk]' />
+              <text column='[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:complaint_id:qk]' />
+              <text column='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:complaint_id:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3C7FFAF6-004D-4919-BF6B-8B706B411FEB}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Complaints by Officer Ethnicity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column datatype='string' name='[Complainant Ethnicity (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[complainant_ethnicity]' new-bin='true'>
+                <bin default-name='false' value='&quot;Indian, Asian, Other&quot;'>
+                  <value>&quot;American Indian&quot;</value>
+                  <value>&quot;Asian&quot;</value>
+                  <value>&quot;Other Race&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_id]' derivation='CountD' name='[ctd:complaint_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Officer Race' datatype='string' name='[mos_ethnicity]' role='dimension' type='nominal' />
+            <column-instance column='[mos_ethnicity]' derivation='None' name='[none:mos_ethnicity:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Complainant Ethnicity (group)]' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:mos_ethnicity:nk]' />
+              <groupfilter function='member' level='[none:mos_ethnicity:nk]' member='&quot;American Indian&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]</column>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]' scope='rows' value='Complaint Counts' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' value='21' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pvi0fu10ek83g13z81bd1012z06].[ctd:complaint_id:qk]</rows>
+        <cols>[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]</cols>
+      </table>
+      <simple-id uuid='{1DD6BA3E-F488-43EE-9935-65A4D2B793F3}' />
+    </worksheet>
+    <worksheet name='Sheet 4 (4)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Complaints by Complainee Race&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allegations_202007271729 (2)' name='federated.1pvi0fu10ek83g13z81bd1012z06' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pvi0fu10ek83g13z81bd1012z06'>
+            <column datatype='string' name='[Complainant Ethnicity (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[complainant_ethnicity]' new-bin='true'>
+                <bin default-name='false' value='&quot;Indian, Asian, Other&quot;'>
+                  <value>&quot;American Indian&quot;</value>
+                  <value>&quot;Asian&quot;</value>
+                  <value>&quot;Other Race&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column-instance column='[complaint_id]' derivation='Count' name='[cnt:complaint_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Complainant Ethnicity' datatype='string' name='[complainant_ethnicity]' role='dimension' type='nominal' />
+            <column caption='Complaint Id' datatype='integer' name='[complaint_id]' role='measure' type='quantitative' />
+            <column-instance column='[complaint_id]' derivation='Sum' name='[pcto:sum:complaint_id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[complaint_id]' derivation='Sum' name='[sum:complaint_id:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Black&quot;' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Hispanic&quot;' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Indian, Asian, Other&quot;' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Refused&quot;' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;Unknown&quot;' />
+              <groupfilter function='member' level='[Complainant Ethnicity (group)]' member='&quot;White&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' />
+              <wedge-size column='[federated.1pvi0fu10ek83g13z81bd1012z06].[cnt:complaint_id:qk]' />
+              <size column='[federated.1pvi0fu10ek83g13z81bd1012z06].[sum:complaint_id:qk]' />
+              <text column='[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:complaint_id:qk]' />
+              <text column='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&lt;</run>
+                <run>[federated.1pvi0fu10ek83g13z81bd1012z06].[pcto:sum:complaint_id:qk]</run>
+                <run>&gt;</run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F16609BB-0F68-47E6-B302-14AA5602E903}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Officer Race Does Matter'>
+      <style />
+      <size maxheight='860' maxwidth='1450' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='16' param='horz' type-v2='layout-flow' w='98896' x='552' y='930'>
+            <zone h='98140' id='8' param='horz' type-v2='layout-flow' w='98896' x='552' y='930'>
+              <zone h='98140' id='6' type-v2='layout-basic' w='98896' x='552' y='930'>
+                <zone h='30117' id='3' name='Sheet 4' w='98896' x='552' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='5' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='43838' id='5' name='Sheet 4 (3)' w='86475' x='552' y='55232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='5' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24185' id='12' name='Sheet 4 (4)' w='35035' x='35584' y='31047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24185' id='13' name='Sheet 4 (4)' pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' type-v2='color' w='28829' x='70619' y='31047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='43838' id='9' is-fixed='true' name='Sheet 4 (3)' pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' type-v2='color' w='12421' x='87027' y='55232'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24185' id='14' name='Sheet 4 (2)' w='22612' x='552' y='31047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='5' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24185' id='17' name='Sheet 4 (2)' pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' type-v2='color' w='12420' x='23164' y='31047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9FFD0D0B-A9E5-4E0C-938B-08A47A5F2F43}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Officer Race Does Not Matter'>
+      <style />
+      <size maxheight='860' maxwidth='1050' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='83256' id='7' param='horz' type-v2='layout-flow' w='98476' x='762' y='15814'>
+            <zone h='83256' id='5' type-v2='layout-basic' w='98476' x='762' y='15814'>
+              <zone h='83256' id='3' name='Sheet 1' w='49233' x='762' y='15814'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='83256' id='11' name='Sheet 2' w='49243' x='49995' y='15814'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='14884' id='10' param='vert' type-v2='layout-flow' w='98476' x='762' y='930'>
+            <zone h='5349' id='8' name='Sheet 1' pane-specification-id='2' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type-v2='color' w='98476' x='762' y='930'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='5349' id='12' leg-item-order='reversed' name='Sheet 2' pane-specification-id='1' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type-v2='color' w='98476' x='762' y='6279'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='13' param='vert' type-v2='layout-flow' w='98476' x='762' y='930'>
+                <zone fixed-size='280' h='83256' id='3' is-fixed='true' name='Sheet 1' w='49233' x='762' y='15814'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5349' id='8' name='Sheet 1' pane-specification-id='2' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type-v2='color' w='98476' x='762' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83256' id='11' is-fixed='true' name='Sheet 2' w='49243' x='49995' y='15814'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5349' id='12' leg-item-order='reversed' name='Sheet 2' pane-specification-id='1' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type-v2='color' w='98476' x='762' y='6279'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E29C0FB8-13CB-4FCB-BC00-D98B3F40786F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EE446B1B-E786-4EE7-995A-F793D64B92CD}' />
+    </window>
+    <window class='worksheet' name='Sheet 1 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45204A73-4AEE-4377-87F1-A76CBF87A2F6}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1FFB3EA6-7F2D-4DE2-AFAE-F00F7859BBE5}' />
+    </window>
+    <window class='dashboard' name='Officer Race Does Not Matter'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{8B4F20BC-43FD-42DF-8033-56349A383889}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{483E9B2C-B346-4AF2-9048-C34D88722B23}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A3E1896-4E7E-44E2-9573-4BEBE2A9CD72}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[none:mos_ethnicity:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{99A27EF8-EF9F-4C49-853C-DDBCB6BA2085}' />
+    </window>
+    <window class='worksheet' name='Sheet 4 (4)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1pvi0fu10ek83g13z81bd1012z06].[Complainant Ethnicity (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F8173CF9-7B85-4E85-810D-0ED6B2374E42}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Officer Race Does Matter'>
+      <viewpoints>
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 4 (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4 (3)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4 (4)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{60C3AD9C-CA34-45B9-9BAF-D347D51EE533}' />
+    </window>
+  </windows>
+</workbook>
